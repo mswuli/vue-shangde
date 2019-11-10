@@ -1,0 +1,43 @@
+.new-footer{
+  position: fixed;
+  width: 100%;
+  right:0;
+  left:0;
+  bottom: 0;
+  text-align: center;
+  z-index: 100;
+  padding:30px 40px;
+  background: #fff;
+  .footer-left { 
+    img{
+      display: inline-block;
+      width: 34px;
+      height: 30px;
+      vertical-align: middle;
+      margin-right:5px;
+    }
+    p{
+      display: inline-block;
+      font-size:28px; 
+      color:#333333;
+      line-height:40px;
+      vertical-align: middle;
+    }
+  }
+  .footer-right { 
+    .btn-black,.btn-gold{
+      padding:0 30px ;
+      line-height:60px;
+      border-radius:30px;
+      font-size:28px;
+      color:#fff;
+    }
+    .btn-black{
+      background:#252A32 ;
+      margin-right: 20px;
+    }
+    .btn-gold{
+      background: @color;
+    }
+  }
+}

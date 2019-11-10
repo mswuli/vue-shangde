@@ -1,0 +1,221 @@
+.page-index{
+  height:100%;
+  padding-top: 168px;
+  padding-bottom: 200px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; 
+}
+.section{ 
+  .sce-navbar{
+    background: #fff;
+    padding:24px 10%;  
+    .navbar-item{ 
+      padding-right:100px; 
+      text-align: center;
+      &:nth-last-child(1){
+        padding-right: 0px;
+        &::before{
+          // content: "";
+          display: none;
+        } 
+      }
+    }
+  }
+}
+.mba-introduce{
+  padding:0 30px; 
+}
+.college{ 
+  position:relative;
+  height: 1190px; 
+  overflow: hidden;
+  .college-sec{
+    position: absolute; 
+    z-index: 100;
+    width:100%;
+    height: 1040px; 
+    background:#252A32;
+    top:auto;
+    bottom:0;
+    &.college-first{
+      z-index:110;
+    }
+    &.switch-next{
+      z-index:109;
+    }
+    &.switch-hide { 
+      animation: college-switch 1s reverse;
+    }
+    @keyframes college-switch {
+      0%{ 
+        z-index:110;
+        transform: translateX(0%);
+      }
+      50% {
+        transform: translateX(120%);
+      }
+      100% {
+        z-index:109!important;
+        transform: translateX(0%);
+      }
+    }
+    .college-mark-box{
+      padding:0 58px;
+    }
+    .college-mark{
+      width:150px;
+      height:150px; 
+      padding:18px 14px;
+      text-align: center;
+      img{
+        width: 44px;
+      }
+      p{
+        font-size:24px; 
+        font-weight:400;
+        color:@color;
+        line-height:38px;
+        padding-top: 14px;
+      }
+    } 
+  }
+  .change-sec{
+    position: absolute;
+    right:0px;
+    width:60px; 
+    top:0;
+    height:220px; 
+    .right-box{
+      width:100%;
+      height:100%;
+      position: absolute;
+      right:0;
+      top:50%;
+      transform: translateY(-50%); 
+    }
+    
+    .change-data{
+      position: absolute;
+      background: rgba(0,0,0,.3);
+    //  top:98px; 
+      right:0;
+      width: 40px;
+      height: 110px;
+      top:50%;
+      transform: translateY(-50%);
+      border-radius: 10px 0 0 10px;
+      &::after{
+        content: " ";
+        position: absolute; 
+        // width: 20px;
+        // height: 20px;  
+        top:50%;
+        transform: translateY(-50%);
+        border: #fff solid 4px;
+        border-left: 0;
+        border-bottom: 0;
+        -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
+        animation: arrow-right 1s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+  @keyframes arrow-right
+  {
+  from {
+    width:10px;
+    height:10px;
+    left:0px;
+    opacity: .3; 
+  }
+  to { 
+      width: 20px;
+      height: 20px;
+      left:35px;
+      opacity: 1; 
+    }
+  }
+
+  .area-bg{
+    width:100%;
+    height:220px;
+    display: block;
+  }
+  .mint-cell-value{
+    width: 100%;
+  }
+  .mint-cell-title{
+    display: none;
+  }
+  
+  .load-more{
+    display: block;
+    margin: 20px auto;
+    width: 24px;
+  }
+  .college-tab-box{
+    // height:654px;
+    overflow: hidden;
+  }
+}
+.public-class{
+  padding:0 30px;
+  .sce-navbtn{
+    li{
+      margin-right:30px;
+      &:nth-last-child(1){
+        margin-right: 0;
+      }
+    }
+  }
+} 
+.curriculum{
+  padding:0 30px;
+  .curriculum-left{
+    width: 382px;
+    position: relative;
+    margin-right: 8px;
+    .curriculum-left-bg{
+      width:100%;
+      width: 382px;
+      height:352px;
+    }
+    img{
+      width:100%;
+    }
+  }
+  .curriculum-right{ 
+    width:300px;
+    position: relative;
+    .right-item{
+      position: relative;
+      .curriculum-right-bg{
+        width:100%;
+        height:172px;
+        margin-bottom: 8px;
+        &:nth-last-child(1){ 
+          margin-bottom: 0px;
+        }
+      } 
+      img{
+        width:100%;
+      }
+    } 
+  }
+  .curriculum-more{
+    text-align: center;
+    bottom: 24px;
+    font-size:24px;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:34px;
+  }
+} 
+.mba-biref{
+  padding: 0 30px 0;
+  .navbtn-item{
+    margin-right: 28px;
+  }
+}

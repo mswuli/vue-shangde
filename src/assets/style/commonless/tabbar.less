@@ -1,0 +1,40 @@
+.page-tabbar{
+  position: fixed;
+  z-index: 1000;
+  bottom:0;
+  width: 100%;
+  padding:21px 80px 21px;
+  background: #fff;
+  .tab-item{
+    text-align: center;
+    img{
+      width:35px;  
+      margin:0; 
+      &:nth-child(2){
+        display:none;
+      } 
+      &:nth-child(1){
+        display: inline-block;
+      }
+    } 
+    &.active{
+      img:nth-child(2){
+        display: inline-block;
+      }
+      img:nth-child(1){
+        display:none;
+      }
+    }
+    p{
+      font-size:20px; 
+      font-weight:500;
+      color:rgba(102,102,102,1);
+      line-height:28px;
+    }
+    &.active{
+      p{ 
+        color: @color;
+      }
+    }
+  }
+}
